@@ -1,0 +1,100 @@
+# porn-safe
+porn blocker DNS guide website 
+<!-- Modern porn-safe DNS Guide Website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Porn Safe - DNS Blocker Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #0f172a;
+      color: white;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #22d3ee;
+    }
+    .card {
+      background: #1e293b;
+      border: 2px solid #334155;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      border-color: #22d3ee;
+      transform: scale(1.01);
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+    p {
+      font-size: 1rem;
+      color: #cbd5e1;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: 2px solid #38bdf8;
+      background: transparent;
+      color: #38bdf8;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Porn-Safe DNS Blocker Guide</h1>
+    <p>Protect your mobile with secure DNS settings</p>
+  </header>
+
+  <div class="card">
+    <h2>Step 1: Open Private DNS Settings</h2>
+    <p>Go to <strong>Settings > Network & Internet > Private DNS</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>Step 2: Use Secure DNS Provider</h2>
+    <p>Enter this: <strong>family-filter-dns.cleanbrowsing.org</strong></p>
+    <button class="btn" onclick="copyText()">Copy DNS</button>
+  </div>
+
+  <div class="card">
+    <h2>Need Help?</h2>
+    <p>Watch our video guide for full step-by-step process.</p>
+    <a class="btn" href="https://youtube.com/@yourchannel" target="_blank">Watch Video</a>
+  </div>
+
+  <script>
+    function copyText() {
+      navigator.clipboard.writeText("family-filter-dns.cleanbrowsing.org");
+      alert("DNS address copied to clipboard!");
+    }
+  </script>
+
+</body>
+</html>
